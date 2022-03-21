@@ -141,7 +141,7 @@ control MyIngress(inout headers hdr,
             drop;
             set_nhop;
         }
-        size = 2;
+        size = 3;
     }
     apply {
         /* TODO: apply ecmp_group table and ecmp_nhop table if IPv4 header is
